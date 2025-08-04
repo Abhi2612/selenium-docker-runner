@@ -2,7 +2,7 @@ services:
   vendor-portal:
     image: abhi2012/selenium
     environment:
-      - BROWSER=chrome
+      - BROWSER=${BROWSER}
       - HUB_HOST=hub
       - THREAD_COUNT=3
       - TEST_SUITE=vendor-portal.xml
@@ -12,7 +12,7 @@ services:
   flight-reservation:
     image: abhi2012/selenium
     environment:
-      - BROWSER=firefox
+      - BROWSER=${BROWSER}
       - HUB_HOST=hub
       - THREAD_COUNT=3
       - TEST_SUITE=flight-reservation.xml
